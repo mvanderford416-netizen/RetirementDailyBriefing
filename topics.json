@@ -1,0 +1,255 @@
+{
+  "_instructions": [
+    "This file controls the Fun Fact of the Day topic rotation.",
+    "Each Monday the briefing automatically advances to the next 'status: pending' topic.",
+    "The same topic runs all week (Mon-Fri) so readers get digestible daily context.",
+    "To add a topic: copy any block, paste at the end of the list, set status to 'pending'.",
+    "To skip a topic: set status to 'skipped'.",
+    "To repeat a topic: set status back to 'pending'.",
+    "To hold the current topic for an extra week: set status back to 'active'.",
+    "The 'week_of' field is set automatically — do not edit it manually.",
+    "Categories: secure2 | compliance_testing | form_5500 | form_5330 | epcrs"
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "category": "secure2",
+      "title": "SECURE 2.0 Overview & Key Effective Dates",
+      "prompt_focus": "Provide a concise overview of SECURE 2.0 Act of 2022 — what it is, the major categories of changes it made to retirement plans, and a timeline of key provisions by effective date (2023 through 2027). Focus on what plan sponsors and recordkeepers need to know first.",
+      "status": "active",
+      "week_of": "2026-05-04"
+    },
+    {
+      "id": 2,
+      "category": "secure2",
+      "title": "SECURE 2.0: Auto-Enrollment & Auto-Escalation Mandates",
+      "prompt_focus": "Explain the SECURE 2.0 requirement for automatic enrollment and automatic escalation in new 401(k) and 403(b) plans established after December 29, 2022. Cover the minimum deferral rates, escalation caps, opt-out rights, exceptions for small employers and existing plans, and the effective date of January 1, 2025.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 3,
+      "category": "secure2",
+      "title": "SECURE 2.0: Roth Catch-Up Contribution Rules",
+      "prompt_focus": "Explain the SECURE 2.0 Roth catch-up contribution requirement for participants age 50+ earning over $145,000 (indexed). Cover the original 2024 effective date, the IRS administrative transition relief extending it to 2026, what plan sponsors must do to prepare, and recordkeeping implications.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 4,
+      "category": "secure2",
+      "title": "SECURE 2.0: Enhanced Catch-Up Contributions Ages 60-63",
+      "prompt_focus": "Explain the new SECURE 2.0 super catch-up contribution limit for participants aged 60, 61, 62, and 63 — the higher of $10,000 or 150% of the regular catch-up limit. Cover effective date of January 1, 2025, how it differs from age-50 catch-ups, and plan amendment requirements.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 5,
+      "category": "secure2",
+      "title": "SECURE 2.0: Student Loan Match Provisions",
+      "prompt_focus": "Explain the SECURE 2.0 provision allowing employers to make matching contributions based on employees' qualified student loan payments (QSLPs). Cover what counts as a QSLP, certification requirements, effective date of January 1, 2024, nondiscrimination testing relief, and recordkeeping challenges.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 6,
+      "category": "secure2",
+      "title": "SECURE 2.0: Emergency Savings Accounts (Pension-Linked)",
+      "prompt_focus": "Explain the SECURE 2.0 pension-linked emergency savings account (PLESA) feature — how it works as a short-term savings account linked to a defined contribution plan, contribution limits ($2,500), withdrawal rules, employer matching, nondiscrimination rules, and effective date of January 1, 2024.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 7,
+      "category": "secure2",
+      "title": "SECURE 2.0: Long-Term Part-Time Employee Rules",
+      "prompt_focus": "Explain the SECURE 2.0 changes to long-term part-time (LTPT) employee eligibility — reducing the service requirement from 3 years to 2 years of at least 500 hours. Cover SECURE 1.0 background, the 2025 effective date for 401(k) plans, the 2026 effective date for 403(b) plans, and vesting considerations.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 8,
+      "category": "secure2",
+      "title": "SECURE 2.0: RMD Age Changes & Roth Account Updates",
+      "prompt_focus": "Explain the SECURE 2.0 changes to Required Minimum Distributions (RMDs) — the increase to age 73 in 2023 and age 75 in 2033. Also cover the elimination of RMDs for Roth accounts in employer plans starting 2024, and the reduced penalty for missed RMDs (from 50% to 25% or 10%).",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 9,
+      "category": "secure2",
+      "title": "SECURE 2.0: Small Employer Tax Credits & Starter 401(k)s",
+      "prompt_focus": "Explain the SECURE 2.0 enhanced tax credits for small employers setting up new retirement plans — the increased startup cost credit (up to $5,000/year for 3 years), the new employer contribution credit, and the new Starter 401(k) plan design for employers with no existing plan.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 10,
+      "category": "secure2",
+      "title": "SECURE 2.0: Plan Amendment Deadlines & IRS Guidance",
+      "prompt_focus": "Explain the plan amendment deadlines under SECURE 2.0 — when plan sponsors must formally amend their plan documents to reflect SECURE 2.0 provisions. Cover the general deadline (last day of plan year beginning in 2025 for most plans), governmental plan extensions, and IRS Notice 2024-2 guidance.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 11,
+      "category": "compliance_testing",
+      "title": "ADP/ACP Testing: Basics & Safe Harbor Alternatives",
+      "prompt_focus": "Explain the Actual Deferral Percentage (ADP) and Actual Contribution Percentage (ACP) nondiscrimination tests — what they measure, how HCEs vs NHCEs are compared, the 2-times and 2-percentage-point rules, and how safe harbor plan designs (traditional, QACA, SIMPLE) avoid testing entirely.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 12,
+      "category": "compliance_testing",
+      "title": "Top-Heavy Testing: Rules, Minimums & Exemptions",
+      "prompt_focus": "Explain top-heavy plan rules under IRC Section 416 — how top-heavy status is determined (key employees holding more than 60% of plan assets), required minimum contributions for non-key employees (3% of compensation), and which plans are exempt. Cover SECURE 2.0 changes to top-heavy rules for LTPT employees.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 13,
+      "category": "compliance_testing",
+      "title": "Coverage Testing: IRC 410(b) & Minimum Participation",
+      "prompt_focus": "Explain the IRC Section 410(b) minimum coverage test — the ratio percentage test (at least 70% of NHCEs covered relative to HCEs), the average benefit test, and how to identify the testing population. Cover controlled group and affiliated service group rules that affect who must be included.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 14,
+      "category": "compliance_testing",
+      "title": "General Nondiscrimination Testing: IRC 401(a)(4)",
+      "prompt_focus": "Explain IRC Section 401(a)(4) general nondiscrimination testing for contributions and benefits — when it applies, the design-based safe harbors (uniform allocation, uniform points), and when general testing using the rate group method is required. Cover how cross-testing and new comparability plans fit in.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 15,
+      "category": "compliance_testing",
+      "title": "Correcting Failed ADP/ACP Tests: QNECs, Refunds & Recharacterization",
+      "prompt_focus": "Explain the three methods for correcting a failed ADP or ACP test: (1) distributing excess contributions within 2.5 months (avoiding 10% excise tax), (2) recharacterizing excess deferrals as catch-up if applicable, and (3) making QNECs or QMACs to bring the NHCE percentage up. Cover deadlines and tax consequences.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 16,
+      "category": "form_5500",
+      "title": "Form 5500 Overview: Who Files, When & Which Version",
+      "prompt_focus": "Explain the Form 5500 annual report filing requirements — who must file (large vs small plans), the difference between Form 5500, 5500-SF, and 5500-EZ, the standard 7-month deadline (July 31 for calendar-year plans), the 2.5-month extension (Form 5558), and electronic filing through EFAST2.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 17,
+      "category": "form_5500",
+      "title": "Form 5500 Schedules: A, C, D, H, I, R & SB",
+      "prompt_focus": "Explain the major Form 5500 schedules — Schedule A (insurance), Schedule C (service providers with fees over $5,000), Schedule D (DFE participation), Schedule H (large plan financials), Schedule I (small plan financials), Schedule R (retirement plan information), and Schedule SB (actuarial for defined benefit). Explain which plans use which schedules.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 18,
+      "category": "form_5500",
+      "title": "Form 5500 Schedule C: Service Provider Fee Disclosure",
+      "prompt_focus": "Explain Form 5500 Schedule C requirements — which service providers must be reported (those receiving $5,000+ in direct or indirect compensation), what information is required, the indirect compensation exception, and how this connects to the 408(b)(2) fee disclosure rules. Cover common errors and IRS/DOL scrutiny areas.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 19,
+      "category": "form_5500",
+      "title": "Form 5500 Audit Requirements: When an Independent Audit Is Required",
+      "prompt_focus": "Explain when a plan must attach an independent qualified public accountant (IQPA) audit to Form 5500 — the 100-participant threshold at the beginning of the plan year, the 80-120 rule that allows small plans to continue filing as small, and the DOL's limited scope audit option. Cover recent DOL audit quality initiatives.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 20,
+      "category": "form_5500",
+      "title": "Form 5500 Late Filing: Penalties & Delinquent Filer Program",
+      "prompt_focus": "Explain the penalties for late or missing Form 5500 filings — the IRS penalty ($250/day up to $150,000) and the DOL penalty ($250/day up to $150,000). Cover the DOL's Delinquent Filer Voluntary Compliance (DFVC) program, which caps penalties significantly for plans that self-correct late filings.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 21,
+      "category": "form_5330",
+      "title": "Form 5330 Overview: Excise Taxes on Plan Transactions",
+      "prompt_focus": "Explain Form 5330, the IRS form for reporting and paying excise taxes related to qualified retirement plans. Cover what types of transactions trigger a Form 5330 filing, who is responsible for filing and paying (employer vs. plan), and the general deadline structure (8.5 months after the plan year end).",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 22,
+      "category": "form_5330",
+      "title": "Form 5330: Late Deposit Excise Tax on Employee Deferrals",
+      "prompt_focus": "Explain the IRC Section 4975 excise tax on late deposits of employee salary deferrals — why late deposits are prohibited transactions, the 15% excise tax on the amount involved, how the 'amount involved' is calculated, and how VFCP correction eliminates the 4975 tax. Cover the DOL's deferral deposit timing rules.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 23,
+      "category": "form_5330",
+      "title": "Form 5330: Excess Contributions & Excess Aggregate Contributions",
+      "prompt_focus": "Explain the 10% excise tax under IRC Section 4979 on excess contributions (failed ADP test) and excess aggregate contributions (failed ACP test) not corrected within 2.5 months after the plan year end. Cover how the tax is calculated, who pays it, and how timely correction completely avoids the tax.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 24,
+      "category": "form_5330",
+      "title": "Form 5330: Prohibited Transaction Excise Taxes",
+      "prompt_focus": "Explain excise taxes under IRC Section 4975 for prohibited transactions between a plan and a disqualified person — the initial 15% tax and the additional 100% tax if not corrected. Cover common prohibited transactions (loans to owners, improper investments, self-dealing), who is a disqualified person, and statutory exemptions.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 25,
+      "category": "epcrs",
+      "title": "EPCRS Overview: The Three Correction Programs",
+      "prompt_focus": "Explain the IRS Employee Plans Compliance Resolution System (EPCRS) — the three tiers: Self-Correction Program (SCP), Voluntary Correction Program (VCP), and Audit Closing Agreement Program (Audit CAP). Cover when each is available, the cost differences, and how SECURE 2.0 expanded SCP availability.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 26,
+      "category": "epcrs",
+      "title": "EPCRS: Self-Correction Program (SCP) — Scope & Limits",
+      "prompt_focus": "Explain the EPCRS Self-Correction Program (SCP) — what types of failures can be self-corrected, the distinction between significant and insignificant failures, the correction deadline (generally 3 years for significant failures under prior rules, now expanded under SECURE 2.0), and what documentation is required to show a correction was made.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 27,
+      "category": "epcrs",
+      "title": "EPCRS: Correcting Missed Required Minimum Distributions",
+      "prompt_focus": "Explain how to correct missed required minimum distributions (RMDs) under EPCRS — the self-correction method (distributing the missed amount plus earnings, filing Form 5329, requesting penalty waiver), when VCP is needed instead, and how SECURE 2.0 reduced the missed RMD excise tax from 50% to 25% (or 10% with timely correction).",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 28,
+      "category": "epcrs",
+      "title": "EPCRS: Correcting Excess Deferrals (IRC 402(g) Violations)",
+      "prompt_focus": "Explain how to correct excess deferrals — amounts contributed beyond the annual 402(g) limit — under EPCRS and IRS Notice rules. Cover the April 15 deadline for returning excess deferrals, income allocation, tax treatment for the participant, what happens when the deadline is missed, and employer vs. employee responsibility.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 29,
+      "category": "epcrs",
+      "title": "EPCRS: Correcting Failure to Implement Auto-Enrollment Elections",
+      "prompt_focus": "Explain the EPCRS correction method for failing to implement an employee's automatic enrollment election or contribution rate change — the safe harbor correction formula (employer contribution equal to missed deferrals for the affected period), whether lost earnings must be contributed, and the streamlined SCP correction rules under Rev. Proc. 2021-30.",
+      "status": "pending",
+      "week_of": null
+    },
+    {
+      "id": 30,
+      "category": "epcrs",
+      "title": "EPCRS: SECURE 2.0 Expansion — Self-Correction of Inadvertent Errors",
+      "prompt_focus": "Explain how SECURE 2.0 Section 305 significantly expanded the Self-Correction Program (SCP) to allow correction of any inadvertent plan error without IRS approval, as long as the plan has established practices and procedures, the error is not under examination, and correction occurs within a reasonable time. Cover IRS Notice 2023-43 interim guidance and what remains unavailable for SCP.",
+      "status": "pending",
+      "week_of": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: Industry Briefing
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # Runs every hour — time check below gates the actual send
+  workflow_dispatch:        # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  send-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check if it's 6 AM in Kansas City
+        run: |
+          current_hour=$(TZ="America/Chicago" date +%H)
+          if [ "$current_hour" != "06" ]; then
+            echo "Not 6 AM CT (current hour: $current_hour). Skipping."
+            exit 0
+          fi
+
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install aiohttp
+
+      - name: Run industry briefing
+        env:
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS:      ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL:    ${{ secrets.RECIPIENT_EMAIL }}
+        run: python industry_briefing.py
